@@ -1,0 +1,1 @@
+# 占位：保证空目录被 git 跟踪；数据库迁移脚本由 alembic revision --autogenerate 生成

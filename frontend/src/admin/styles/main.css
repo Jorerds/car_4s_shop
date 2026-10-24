@@ -1,0 +1,19 @@
+/* 管理端全局样式：Tailwind + Element Plus 品牌色覆盖（深海蓝主题） */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Element Plus 主色覆盖为品牌深海蓝，各阶衍生色手动推导 */
+:root {
+  --el-color-primary: #17324f;
+  --el-color-primary-light-3: #455c77;
+  --el-color-primary-light-5: #7388a0;
+  --el-color-primary-light-7: #a2b2c4;
+  --el-color-primary-light-8: #bac6d3;
+  --el-color-primary-light-9: #eef2f6;
+  --el-color-primary-dark-2: #0f2438;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'HarmonyOS Sans SC', 'MiSans', 'Microsoft YaHei', sans-serif;
+}

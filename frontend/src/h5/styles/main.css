@@ -1,0 +1,36 @@
+/* 顾客端 H5 全局样式：TailwindCSS 入口 + 光影画廊风格基础样式 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* 去除移动端点击高亮，保持画廊式干净质感 */
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-white font-sans text-ink;
+  }
+}
+
+@layer components {
+  /* 工程图纸式小组标签：小号、加宽字距、弱化色 */
+  .label-tech {
+    @apply text-[11px] tracking-[0.15em] text-ink-faint;
+  }
+  /* 等宽数字：价格、参数等数字纵向对齐 */
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  /* 隐藏横向滚动条（保留滑动能力），用于车型卡片、筛选芯片等横向滚动区 */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
